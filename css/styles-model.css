@@ -1,0 +1,203 @@
+/*Estilos de prueba*/
+
+*{
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+body{
+	background-color: #FFF;
+}
+
+.big{
+	text-align: center;
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	/*border: 1px solid red;*/
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.container-big{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	height:90vh;
+	/*border: 1px solid red;*/
+	background: linear-gradient(140deg, rgba(0,126,161,1) 0%, rgba(0,18,27,1) 53%);
+	border-radius: 12px;
+	-webkit-box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
+	-moz-box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
+	box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
+}
+
+.container-model{
+	position: absolute;
+	/*border: 2px solid blue;¨*/
+	width: 100%; /*900px*/
+	height: 80%; /*100vh*/
+	
+	
+}
+
+.texto-fuente{
+	margin-left: 21%;
+	margin-top: 48%;
+	width: 70%;
+	position: absolute;
+	z-index: 1;
+}
+
+.texto-subtitulo{
+	margin-left: 8%;
+	margin-top: 70%;
+	width: 60%;
+	position: absolute;
+	z-index: 2;
+	border: 1px solid red;
+	color: #CCC;
+}
+
+.pocket-container{
+	width: 100%;
+	margin-top: 22px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	/*border: 1px solid black;*/
+	
+}
+
+.pocket-info{
+	padding-top: .5%;
+
+	padding-bottom: 1.5%;
+	width: 30%;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	border-radius: 12px;
+	-webkit-box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
+	-moz-box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
+	box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
+
+}
+
+.pocket-container p{
+	margin-top: 12px;
+	font-size: 18px;
+}
+
+.texto-fuente p{
+	display: inline;
+	font-family: 'Poppins', sans-serif;
+	font-size: 48px;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+
+.texto-subtitulo p{
+	display: inline;
+	font-family: 'Poppins', sans-serif;
+	font-size: 48px;
+	font-weight: 900;
+}
+
+model-viewer{
+	width: 100%; /*900px*/
+	height: 100%; /*600px*/
+
+
+}
+
+
+/*****************************************MEDIA QUERIE**************************************/
+
+
+@media(max-width:768px){
+	
+	body{
+		/*background-color: aqua;*/
+	}
+	
+	.big{
+		text-align: center;
+		/*border: 1px solid red*/
+	}
+	
+.container-big{
+	width: 98%;
+	text-align: center;
+	height: 75vh;;
+	}
+	
+.container-model{
+
+	margin-left: 14%;
+	position: absolute;
+	/*border: 2px solid blue;*/
+	width: 70%; /*900px*/
+	height: 69%; /*100vh*/
+	}
+	
+.texto-fuente{
+	margin-left: 2%;
+	margin-right: 84px;
+	margin-top: 78%;
+	width: 95%;
+	position: absolute;
+	z-index: 1;
+}
+	
+.texto-subtitulo{
+	width: 90%;
+
+	}
+	
+.pocket-container{
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-top: 5px;
+		width: 98%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+.pocket-info{
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+-webkit-box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+	}
+	
+.pocket-container p{
+	margin-top: 12px;
+	font-size: 24px;
+}
+}
