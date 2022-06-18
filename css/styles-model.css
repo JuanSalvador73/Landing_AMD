@@ -46,8 +46,8 @@ body{
 .container-big{
 	position: relative;
 	width: 100%;
-	max-width: 1200px;
-	height:90vh;
+	max-width: 1195px;
+	height:84vh;
 	/*border: 1px solid red;*/
 	background: linear-gradient(140deg, rgba(0,126,161,1) 0%, rgba(0,18,27,1) 53%);
 	border-radius: 12px;
@@ -56,6 +56,7 @@ body{
 	box-shadow: -1px 2px 9px -2px rgba(193,195,199,1);
 }
 
+/*Este contiene al Modelo 3D*/
 .container-model{
 	position: absolute;
 	/*border: 2px solid blue;¨*/
@@ -66,9 +67,8 @@ body{
 }
 
 .texto-fuente{
-	margin-left: 21%;
 	margin-top: 48%;
-	width: 70%;
+	width: 100%;
 	position: absolute;
 	z-index: 1;
 }
@@ -94,9 +94,10 @@ body{
 }
 
 .pocket-info{
+	text-align: left;
 	padding-top: .5%;
-
 	padding-bottom: 1.5%;
+	padding-left: 1.5%;
 	width: 30%;
 	border: 1px solid #CCC;
 	border-radius: 4px;
@@ -107,11 +108,13 @@ body{
 
 }
 
+/*Tamaño de Fuente de los módulos*/
 .pocket-container p{
 	margin-top: 12px;
 	font-size: 18px;
 }
 
+/*Tamaño de Fuente de título Modelo 3D*/
 .texto-fuente p{
 	display: inline;
 	font-family: 'Poppins', sans-serif;
@@ -127,41 +130,47 @@ body{
 	font-weight: 900;
 }
 
+/*Se usa porcentaje de 100% para que se ajuste al contenedor DIV, se puede editar para recalcular en otras resoluciones de dispositivos*/
 model-viewer{
 	width: 100%; /*900px*/
 	height: 100%; /*600px*/
-
-
 }
 
 
-/*****************************************MEDIA QUERIE**************************************/
+/*****************************************MEDIA QUERIES**************************************/
 
 
 @media(max-width:768px){
 	
-	body{
+body{
 		/*background-color: aqua;*/
 	}
 	
-	.big{
+.big{
+		width: 100%;
+		max-width: 768px;
 		text-align: center;
 		/*border: 1px solid red*/
 	}
 	
 .container-big{
+	display: flex;
 	width: 98%;
 	text-align: center;
-	height: 75vh;;
+	height: 74vh;;
 	}
 	
 .container-model{
-
-	margin-left: 14%;
+	text-align: center;
 	position: absolute;
 	/*border: 2px solid blue;*/
-	width: 70%; /*900px*/
+	width: 100%; /*900px*/
 	height: 69%; /*100vh*/
+	}
+
+model-viewer{
+	/*border: 1px solid red;*/
+	width: 98%;
 	}
 	
 .texto-fuente{
@@ -175,20 +184,19 @@ model-viewer{
 	
 .texto-subtitulo{
 	width: 90%;
-
 	}
 	
 .pocket-container{
 		padding-left: 5px;
 		padding-right: 5px;
 		margin-top: 5px;
-		width: 98%;
+		width: 95%;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 	
 .pocket-info{
-		width: 70%;
+		margin: 1.5px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -202,3 +210,167 @@ model-viewer{
 	font-size: 24px;
 	}
 }
+
+/**/
+
+
+
+/**/
+
+@media(max-width:414px){
+	
+.big{
+	width: 100%;
+	max-width: 414px;
+	text-align: center;
+	/*border: 1px solid red*/
+	}
+	
+.container-big{
+	display: flex;
+	width: 98%;
+	text-align: center;
+	height: 70vh;;
+	}
+	
+.container-model{
+	text-align: center;
+	position: absolute;
+	/*border: 2px solid blue;*/
+	width: 100%; /*900px*/
+	height: 70%; /*100vh*/
+	}
+	
+.texto-fuente{
+	
+	margin-top: 115%;
+	width: 95%;
+	position: absolute;
+	z-index: 1;
+}
+	
+.texto-fuente p{
+	display: inline;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+	
+.pocket-container{
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-top: 5px;
+		width: 97%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+.pocket-info{
+		margin: 3.5px;
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		-webkit-box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+		box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+	}
+	
+.pocket-container p{
+	margin-top: 12px;
+	font-size: 25px;
+	}
+	
+	
+	
+	
+/*Termina Queries 414*/
+}
+	
+
+@media(max-width:360px){
+
+.big{
+	width: 100%;
+	max-width: 360px;
+	text-align: center;
+		/*border: 1px solid red*/
+	}
+	
+.container-big{
+	display: flex;
+	width: 98%;
+	text-align: center;
+	height: 60vh;
+	}
+	
+.container-model{
+	text-align: center;
+	position: absolute;
+	/*border: 2px solid blue;*/
+	width: 100%; /*900px*/
+	height: 75%; /*100vh*/
+	}
+	
+.texto-fuente{
+	margin-top: 85%;
+	width: 95%;
+	position: absolute;
+	z-index: 1;
+	}
+	
+.texto-fuente p{
+	display: inline;
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	color: #FFFFFF;
+	}
+	
+.pocket-container{
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-top: 5px;
+		width: 93%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+.pocket-info{
+		
+		display: flex;
+		flex-direction: column;
+		width: 97%;
+		-webkit-box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+		box-shadow: 2px 3px 10px -5px rgba(0,0,0,0.75);
+	}
+	
+.pocket-container p{
+	margin-top: 12px;
+	font-size: 24px;
+	}
+	
+/*Termina 360Queries*/
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
