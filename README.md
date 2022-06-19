@@ -10,6 +10,6 @@ La versión para móviles a resolución 360 x 640 es la siguiente:
 
 ![Screen_Res_Movil](https://user-images.githubusercontent.com/99113565/174429899-f53cf41f-b192-45dd-87f5-1b0bdcaf0a0e.png)
 
-Se irán adjuntanto cambios conforme avance el proyecto. El sitio publicado en "pages" de Github: 
+Se irán adjuntando cambios conforme avance el proyecto. El sitio publicado en "pages" de Github: 
 
 https://juansalvador73.github.io/Landing_AMD/
